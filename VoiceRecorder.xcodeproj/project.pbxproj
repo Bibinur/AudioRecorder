@@ -13,6 +13,8 @@
 		BCEC2D961D2D61D30047434A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEC2D941D2D61D30047434A /* Main.storyboard */; };
 		BCEC2D981D2D61D30047434A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEC2D971D2D61D30047434A /* Assets.xcassets */; };
 		BCEC2D9B1D2D61D30047434A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEC2D991D2D61D30047434A /* LaunchScreen.storyboard */; };
+		BCEC2DF01D33649E0047434A /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEC2DEF1D33649E0047434A /* Recording.m */; };
+		BCEC2E191D356EB00047434A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEC2E181D356EB00047434A /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		BCEC2D971D2D61D30047434A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCEC2D9A1D2D61D30047434A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCEC2D9C1D2D61D30047434A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEC2DEE1D33649E0047434A /* Recording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recording.h; sourceTree = "<group>"; };
+		BCEC2DEF1D33649E0047434A /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recording.m; sourceTree = "<group>"; };
+		BCEC2E171D356EB00047434A /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		BCEC2E181D356EB00047434A /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +68,11 @@
 				BCEC2D8F1D2D61D30047434A /* AppDelegate.m */,
 				BCEC2D911D2D61D30047434A /* ViewController.h */,
 				BCEC2D921D2D61D30047434A /* ViewController.m */,
+				BCEC2DEE1D33649E0047434A /* Recording.h */,
+				BCEC2DEF1D33649E0047434A /* Recording.m */,
 				BCEC2D941D2D61D30047434A /* Main.storyboard */,
+				BCEC2E171D356EB00047434A /* TableViewController.h */,
+				BCEC2E181D356EB00047434A /* TableViewController.m */,
 				BCEC2D971D2D61D30047434A /* Assets.xcassets */,
 				BCEC2D991D2D61D30047434A /* LaunchScreen.storyboard */,
 				BCEC2D9C1D2D61D30047434A /* Info.plist */,
@@ -110,6 +120,7 @@
 				TargetAttributes = {
 					BCEC2D871D2D61D30047434A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PA7JNFNX87;
 					};
 				};
 			};
@@ -152,6 +163,8 @@
 				BCEC2D931D2D61D30047434A /* ViewController.m in Sources */,
 				BCEC2D901D2D61D30047434A /* AppDelegate.m in Sources */,
 				BCEC2D8D1D2D61D30047434A /* main.m in Sources */,
+				BCEC2E191D356EB00047434A /* TableViewController.m in Sources */,
+				BCEC2DF01D33649E0047434A /* Recording.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +276,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VoiceRecorder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhursinbek.bibinur.VoiceRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -274,10 +290,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VoiceRecorder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhursinbek.bibinur.VoiceRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
